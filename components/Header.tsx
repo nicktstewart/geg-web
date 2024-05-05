@@ -19,7 +19,7 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/twitter">Twitter</Link>
+            <Link href="https://twitter.com/GuriiEco/">Twitter</Link>
           </li>
           <li>
             <Link href="/support">Support</Link>
