@@ -23,9 +23,16 @@ const HomePage = () => {
     {
       id: 2,
       title: "Comet Parkour",
-      description: "Jump from comet to comet",
+      description: "Jump from comet to comet.",
       image: "/logos/comet_parkour.png",
       link: "/games/comet_parkour",
+    },
+    {
+      id: 3,
+      title: "Wayward Bones",
+      description: "Dig your way to an exciting adventure.",
+      image: "/logos/wayward_bones.png",
+      link: "/games/wayward_bones",
     },
     // Add more games...
   ];
@@ -34,12 +41,13 @@ const HomePage = () => {
     <main className="mt-8">
       <section className="mb-8">
         <Card className="flex flex-col md:flex-row">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 p-4">
             <Image
               src={games[0].image}
               alt={games[0].title}
               width={400}
               height={400}
+              style={{ borderRadius: "8px", objectFit: "cover" }}
             />
           </div>
           <CardContent className="md:w-1/2 p-4">
@@ -53,7 +61,7 @@ const HomePage = () => {
             </CardHeader>
             <CardFooter>
               <Button asChild className="mt-4">
-                <Link href={games[0].link}>Learn More</Link>
+                <Link href={games[0].link}>Play Now!</Link>
               </Button>
             </CardFooter>
           </CardContent>
@@ -63,7 +71,15 @@ const HomePage = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {games.slice(1).map((game) => (
           <Card key={game.id} className="flex flex-col">
-            <Image src={game.image} alt={game.title} width={400} height={400} />
+            <div className="p-4">
+              <Image
+                src={game.image}
+                alt={game.title}
+                width={400}
+                height={400}
+                style={{ borderRadius: "8px", objectFit: "cover" }}
+              />
+            </div>
             <CardContent className="p-4">
               <CardHeader>
                 <CardTitle className="text-xl font-bold">
@@ -75,7 +91,7 @@ const HomePage = () => {
               </CardHeader>
               <CardFooter>
                 <Button asChild className="mt-4">
-                  <Link href={game.link}>Learn More</Link>
+                  <Link href={game.link}>Play Now!</Link>
                 </Button>
               </CardFooter>
             </CardContent>
