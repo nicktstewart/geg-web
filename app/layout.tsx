@@ -14,6 +14,29 @@ export const metadata: Metadata = {
     shortcut: "/geg.ico",
     apple: "/geg.ico",
   },
+  openGraph: {
+    title: "Gurii Eco Games",
+    description: "Enjoy the games you love.",
+    url: "https://www.guriieco.com/",
+    siteName: "Gurii Eco Games",
+    images: [
+      {
+        url: "https://www.guriieco.com/geg.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gurii Eco Games",
+    description: "Enjoy the games you love.",
+    site: "@GuriiEco",
+    creator: "@GuriiEco",
+    images: "https://www.guriieco.com/geg.png",
+  },
 };
 
 export default function RootLayout({
