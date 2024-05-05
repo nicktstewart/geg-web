@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   title: "Gurii Eco Games",
   description: "Enjoy the games you love.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/geg.ico",
+    shortcut: "/geg.ico",
+    apple: "/geg.ico",
   },
 };
 
