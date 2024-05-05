@@ -10,6 +10,8 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const HomePage = () => {
   const games = [
@@ -32,31 +34,7 @@ const HomePage = () => {
 
   return (
     <div className="container mx-auto">
-      <header className="flex items-center justify-between py-4">
-        <Image
-          src="/logos/GuriiEcoGames_logo_2x.png"
-          alt="Gurii Eco Games Logo"
-          width={150}
-          height={50}
-        />
-        <nav>
-          <ul className="flex space-x-4">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/twitter">Twitter</Link>
-            </li>
-            <li>
-              <Link href="/support">Support</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
+      <Header />
       <main className="mt-8">
         <section className="mb-8">
           <Card className="flex flex-col md:flex-row">
@@ -114,6 +92,7 @@ const HomePage = () => {
           ))}
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
