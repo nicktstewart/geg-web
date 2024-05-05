@@ -22,7 +22,7 @@ export default function SupportPage() {
         <CardContent>
           <p className="mb-4">
             If you have any questions, issues, or inquiries about our games,
-            please don't hesitate to contact our support team.
+            please don&apos;t hesitate to contact our support team.
           </p>
           <p className="mb-4">
             You can reach us via email at{" "}
