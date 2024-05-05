@@ -17,7 +17,7 @@ const HomePage = () => {
       id: 1,
       title: "Battle Against the Acolytes of Science",
       description: "An action packed game set in a world after death.",
-      image: "/logos/BAAS_VerticalCapsule.webp",
+      image: "/logos/BAAS.png",
       link: "/games/baas",
     },
     {
@@ -45,7 +45,7 @@ const HomePage = () => {
             <Image
               src={games[0].image}
               alt={games[0].title}
-              width={400}
+              width={700}
               height={400}
               style={{ borderRadius: "8px", objectFit: "cover" }}
             />
