@@ -22,19 +22,25 @@ const HomePage = () => {
     },
     {
       id: 2,
+      title: "Wayward Bones",
+      description: "Dig your way to an exciting adventure.",
+      image: "/logos/wayward_bones.png",
+      link: "/games/wayward_bones",
+    },
+    {
+      id: 3,
       title: "Comet Parkour",
       description: "Jump from comet to comet.",
       image: "/logos/comet_parkour.png",
       link: "/games/comet_parkour",
     },
     {
-      id: 3,
-      title: "Wayward Bones",
-      description: "Dig your way to an exciting adventure.",
-      image: "/logos/wayward_bones.png",
-      link: "/games/wayward_bones",
+      id: 4,
+      title: "Blowoon",
+      description: "Blow up a balloon!",
+      image: "/logos/blowoon.png",
+      link: "/games/blowoon",
     },
-    // Add more games...
   ];
 
   return (
