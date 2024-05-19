@@ -9,7 +9,7 @@ export default function Home() {
       </h1>
       <div className="aspect-w-16 aspect-h-9 h-screen">
         <iframe
-          src="https://guriiecogames.github.io/geg-builds/BAAS/"
+          src="https://guriiecogames.github.io/geg-builds/BAASdemo/"
           className="w-full h-full"
         ></iframe>
       </div>
