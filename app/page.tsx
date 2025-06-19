@@ -65,9 +65,18 @@ const HomePage = () => {
                 {games[0].description}
               </CardDescription>
             </CardHeader>
-            <CardFooter>
+            <CardFooter className="flex gap-2">
               <Button asChild className="mt-4">
-                <Link href={games[0].link}>Play Now!</Link>
+                <Link href={games[0].link}>Play Demo</Link>
+              </Button>
+              <Button asChild className="mt-4" variant="outline">
+                <Link
+                  href="https://store.steampowered.com/app/2941950/Battle_Against_the_Acolytes_of_Science/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Full Version on Steam
+                </Link>
               </Button>
             </CardFooter>
           </CardContent>

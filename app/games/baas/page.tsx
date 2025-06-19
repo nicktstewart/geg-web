@@ -37,9 +37,27 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">
-        Battle Against the Acolytes of Science Demo
-      </h1>
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold mb-4">
+          Battle Against the Acolytes of Science Demo
+        </h1>
+        <div className="flex flex-col sm:flex-row gap-4 items-start">
+          <p className="text-lg text-gray-600 flex-1">
+            Experience the demo version below, or get the full version for free
+            on Steam!
+          </p>
+          <Button asChild size="lg">
+            <a
+              href="https://store.steampowered.com/app/2941950/Battle_Against_the_Acolytes_of_Science/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700"
+            >
+              Get Full Version on Steam
+            </a>
+          </Button>
+        </div>
+      </div>
       <div className="aspect-w-16 aspect-h-9 h-screen">
         <iframe
           src="https://guriiecogames.github.io/geg-builds/BAASdemo/"
