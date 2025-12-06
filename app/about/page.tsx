@@ -19,9 +19,9 @@ export default function AboutPage() {
           <div className="bg-blue-50 p-4 rounded-lg mb-6">
             <h3 className="text-lg font-semibold mb-2">🎉 Now on Steam!</h3>
             <p className="mb-3">
-              Our flagship game "Battle Against the Acolytes of Science" is now
-              available on Steam for free! Experience the full version with
-              enhanced features and content.
+              Our flagship game &quot;Battle Against the Acolytes of
+              Science&quot; is now available on Steam for free! Experience the
+              full version with enhanced features and content.
             </p>
             <Button asChild>
               <a
